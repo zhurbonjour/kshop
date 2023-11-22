@@ -1,4 +1,4 @@
-from kshop.apps.shop.models import Category, Collection
+from ..models import Category, Collection
 
 
 def get_all_categories():
@@ -6,6 +6,6 @@ def get_all_categories():
     return categories
 
 
-def get_all_categorietions():
+def get_all_collections():
     collections = Collection.objects.all()
     return collections

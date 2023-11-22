@@ -54,11 +54,11 @@ urlpatterns = [
         admin.site.urls,
     ),
     path(
-        "shop",
+        "shop/",
         include("shop.urls"),
     ),
     path(
-        "reviews",
+        "reviews/",
         include("shop.urls"),
     ),
 ]

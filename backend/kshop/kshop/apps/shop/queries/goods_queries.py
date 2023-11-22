@@ -1,4 +1,4 @@
-from kshop.apps.shop.models import Good
+from ..models import Good
 
 
 def get_goods_in_stock():

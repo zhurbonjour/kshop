@@ -46,6 +46,8 @@ class Image(models.Model):
         on_delete=models.CASCADE,
     )
     image = models.ImageField(verbose_name="Изображение")
+    is_main = models.BooleanField(verbose_name="На обложку")
+    is_favorite = models.BooleanField(verbose_name="На главную")
 
     class Meta:
         verbose_name = "Изображение"

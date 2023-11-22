@@ -6,6 +6,9 @@ class Review(models.Model):
     left_at = models.DateField(auto_now_add=True, verbose_name="Время комментария")
     comment = models.TextField(verbose_name="Отзыв")
 
+    def __str__(self):
+        return str(self.comment)[:25]
+
     class Meta:
         verbose_name = "Отзыв"
         verbose_name_plural = "Отзывы"

@@ -9,7 +9,13 @@ q/shop/archive-goods - получене архивных товаров
 /posts/ - получение последних 3-х постов для отрисовки на главной
 """
 
+from django.urls import path
+from .api import LastReviewsAPIView, SelectedGoodReviewsAPIView
+
 
 app_label = "reviews"
 
-urlpattrns = []
+urlpattrns = [
+    path("", LastReviewsAPIView.as_view()),
+    path("<int:id>/", SelectedGoodReviewsAPIView.as_view()),
+]
