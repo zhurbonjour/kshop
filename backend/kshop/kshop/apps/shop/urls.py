@@ -31,5 +31,5 @@ urlpatterns = [
     path("categories/", CategoriesAPIView.as_view()),
     path("collections/", CollectionsAPIView.as_view()),
     path("images/", ImagesAPIView.as_view()),
-    path("fagorite-images/", FavoriteImagesAPIView.as_view()),
+    path("favorite-images/", FavoriteImagesAPIView.as_view()),
 ]

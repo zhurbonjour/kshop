@@ -15,7 +15,7 @@ from .api import LastReviewsAPIView, SelectedGoodReviewsAPIView
 
 app_label = "reviews"
 
-urlpattrns = [
+urlpatterns = [
     path("", LastReviewsAPIView.as_view()),
     path("<int:id>/", SelectedGoodReviewsAPIView.as_view()),
 ]

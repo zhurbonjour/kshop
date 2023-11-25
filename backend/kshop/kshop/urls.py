@@ -59,6 +59,6 @@ urlpatterns = [
     ),
     path(
         "reviews/",
-        include("shop.urls"),
+        include("reviews.urls"),
     ),
 ]
