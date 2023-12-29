@@ -139,7 +139,7 @@ class ImagesAPIView(APIView):
         },
     )
     def get(self, request):
-        inserializer = IDRequestSerializer(request.query_params)
+        inserializer = IDRequestSerializer(data=request.query_params)
         if inserializer.is_valid():
             try:
                 good_id = inserializer.data["id"]
